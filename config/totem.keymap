@@ -142,7 +142,7 @@
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
             //             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃   PG_UP   ┃           ┃   PG_DN   ┃           ┃
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃           ┃           ┃           ┃           ┃           ┃   ┃    HOME   ┃   LEFT    ┃     UP    ┃   RIGHT   ┃           ┃
+            //             ┃    cmd    ┃    alt    ┃    ctrl   ┃   shift   ┃           ┃   ┃    HOME   ┃   LEFT    ┃     UP    ┃   RIGHT   ┃           ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
             // ┃  MEDIA    ┃           ┃           ┃           ┃           ┃           ┃   ┃    END    ┃           ┃    DOWN   ┃           ┃           ┃           ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -150,10 +150,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                           &trans  &trans  &trans  &trans  &trans    &trans    &kp PG_UP  &none    &kp PG_DN &trans
-                           &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp LEFT   &kp UP   &kp RIGHT &trans
-                &mo MEDIA  &trans  &trans  &trans  &trans  &trans    &kp END   &none      &kp DOWN &none    &trans  &trans
-                                           &trans  &trans  &trans    &trans    &mo SYM    &trans
+                           &trans   &trans   &trans    &trans    &trans    &trans    &kp PG_UP  &none    &kp PG_DN &trans
+                           &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans    &kp HOME  &kp LEFT   &kp UP   &kp RIGHT &trans
+                &mo MEDIA  &trans   &trans   &trans    &trans    &trans    &kp END   &none      &kp DOWN &none    &trans  &trans
+                                             &trans    &trans    &trans    &trans    &mo SYM    &trans
             >;
         };
 
